@@ -123,13 +123,6 @@ nav li a:hover:after {
 /* Header */
 /* ------------------------------------- */
 
-
-header {
-  /* background: #fafafa;
-  padding: 18px 0;
-  border-bottom: 1px solid #e9e9e9; */
-}
-
 .container {
   max-width: 70%;
   margin: 0 auto;
@@ -179,7 +172,6 @@ header .container {
 .hero h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  /* font-family: 'Bowlby One SC'; */
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
@@ -231,7 +223,6 @@ section .container {
 }
 
 .col {
-  /* width: 100%; */
   height: auto;
   border-radius: 6px;
   display: block
@@ -289,7 +280,6 @@ section .container {
   padding: 18px;
   background: #fff;
   border-radius: 8px;
-  /* border: 1px solid #f0f0f0 */
   transition: .2s;
 }
 
