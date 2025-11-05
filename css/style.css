@@ -133,7 +133,7 @@ header {
   background-repeat: no-repeat;
   background-size:contain;
   background-position: center; */
-  height:60vh;
+  height:100dvh;
 }
 
 header > div {
@@ -198,10 +198,6 @@ h2 {
 .image-goal img {
   height: 250px;
   width: 300px;
-}
-
-#innovation {
-  text-align: justify;
 }
 
 .image-innovatie {
@@ -272,11 +268,6 @@ h2 {
 /* ------------------------------------- */
 
 @media (600px <= width <= 900px) {
-
-  .hero .container {
-    grid-template-columns: 1fr;
-  }
-
   .two-col {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -294,11 +285,6 @@ h2 {
     grid-template-columns: 1fr
   }
 
-  header .container {
-    flex-direction: column;
-    align-items: flex-start
-  }
-
   header nav ul {
     flex-wrap: wrap
   }
@@ -310,19 +296,6 @@ h2 {
 }
 
 @media (300px <= width <= 600px) {
-
-  .container {
-    max-width: none;
-  }
-
-  section .container {
-    max-width: none;
-  }
-
-  .hero .container {
-    grid-template-columns: 1fr;
-  }
-
   .two-col {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -346,32 +319,12 @@ h2 {
   .col-card {
     min-width: 80%;
   }
-
-  #goal .card,
-  #innovation .card,
-  #product .card {
-    min-width: 90%;
-  }
-
-  .image-innovatie {
-    display: flex;
-    align-items: center;
-  }
 }
 
 @media (width <= 300px) {
-
-  .container {
-    max-width: none;
-  }
-
-  .hero .container {
-      grid-template-columns: 1fr;
-    }
-
   .feature-cards {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+  }
 
   .two-col {
     grid-template-columns: 1fr;
