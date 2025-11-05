@@ -206,11 +206,16 @@ section {
   display: flex;
   flex-flow: column;
   gap: 200px;
+  padding: 50px 0;
+}
+
+section .container {
+  max-width: 60%;
 }
 
 .section-title {
   text-align: center;
-  font-size: 26px;
+  font-size: 2.1rem;
   margin-bottom: 28px;
   font-weight: 800
 }
@@ -226,10 +231,14 @@ section {
 }
 
 .col {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   border-radius: 6px;
   display: block
+}
+
+#innovation .col {
+  width: 100%;
 }
 
 .image-goal img {
@@ -244,11 +253,18 @@ section {
 .image-innovatie {
   display: flex;
   flex-direction: column-reverse;
+  padding: 70px 30px;
 }
 
 .image-product img {
   height: 250px;
   width: 300px;
+}
+
+.image-product img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -310,7 +326,16 @@ section {
   }
 
   .two-col {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-product img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .feature-cards {
@@ -334,11 +359,14 @@ section {
   }
 
   .two-col {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .feature-cards {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
 
   header .container {
