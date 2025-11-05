@@ -4,6 +4,7 @@
 :root {
   --box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
   --box-shadow-inverted: 0px -6px 16px rgba(0, 0, 0, 0.05);
+  --default-padding: 8px 20px;
 }
 
 * {
@@ -123,19 +124,28 @@ nav li a:hover:after {
 /* Header */
 /* ------------------------------------- */
 
-.container {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-header .container {
+header {
   display: flex;
+  flex-flow: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px
+  justify-content: center;
+  height:60vh;
 }
+
+header > div {
+  width: 80%;
+}
+
+/* ------------------------------------- */
+/* Section */
+/* ------------------------------------- */
+
+section > div {
+  margin: 0 auto;
+}
+
+
+
 
 .button {
   border: none;
@@ -154,22 +164,7 @@ header .container {
   background-color: #007ACC;
 }
 
-.logo img {
-  height: 40px;
-  display: block
-}
-
-.hero {
-  padding: 56px 0
-}
-
-.hero .container {
-  display: flex;
-  flex-direction: row;
-  gap: 36px;
-}
-
-.hero h1 {
+h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 48px;
@@ -187,7 +182,6 @@ header .container {
   width: 80%;
   height: auto;
   border-radius: 6px;
-  box-shadow: var(--box-shadow);
 }
 
 /* ------------------------------------- */
@@ -262,7 +256,6 @@ section .container {
   background: #ffffff;
   padding: 20px;
   border-radius: 6px;
-  box-shadow:var(--box-shadow);
 }
 
 .feature-cards {

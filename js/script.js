@@ -1,4 +1,4 @@
-import functionality from './data.js';
+import functionality from './functionality.js';
 
 // 1. Get a reference to the DOM element where you want to add the cards.
 const functionalitySection = document.getElementById("functionality");
@@ -17,7 +17,7 @@ function addFunctionalities(targetElement) {
     for (let i = 0; i < functionality.length; i++) {
         const div = document.createElement("div");
         // Use classList.add() to add classes
-        div.classList.add("card", "feature");
+        div.classList.add("card", "feature", "shadow");
 
         // Adding the content for the card
         div.innerHTML = `

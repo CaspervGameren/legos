@@ -1,8 +1,6 @@
 footer {
-  /* background: #9f9f9f; */
-  padding: 36px 50px;
+  /* padding: 36px 50px; */
   margin-top: 40px;
-  box-shadow: var(--box-shadow-inverted);
   display: flex;
   gap: 20px;
   align-items: flex-start;

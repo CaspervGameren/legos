@@ -1,0 +1,15 @@
+/* ------------------------------------- */
+/* Default styling */
+/* ------------------------------------- */
+
+.padding {
+  padding: var(--default-padding);
+}
+
+.shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.shadow-inverted {
+  box-shadow: var(--box-shadow-inverted);
+}
