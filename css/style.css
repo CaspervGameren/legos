@@ -127,8 +127,9 @@ nav li a:hover:after {
 header {
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  left: 100px;
+  top: 100px;
+  position: relative;
   /* background-image: url(../images/banner.svg);
   background-repeat: no-repeat;
   background-size:contain;
@@ -136,8 +137,8 @@ header {
   height:100dvh;
 }
 
-header > div {
-  width: 80%;
+.hero {
+  width: 30%;
 }
 
 h1 {
@@ -168,12 +169,17 @@ section > div {
   border-radius: 5px;
   background: white;
   text-align: center;
-  margin: 0 0 28px 0;
+  width: 80%;
+  align-self: center;
 }
 
 h2 {
   font-size: 2rem;
 }
+
+/* ------------------------------------- */
+/* Section */
+/* ------------------------------------- */
 
 .two-col {
   display: flex;
@@ -268,6 +274,18 @@ h2 {
 /* ------------------------------------- */
 
 @media (600px <= width <= 900px) {
+  h2 {
+    text-align: center;
+  }
+    header {
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    width: 80%;
+  }
   .two-col {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -296,6 +314,18 @@ h2 {
 }
 
 @media (300px <= width <= 600px) {
+    h2 {
+    text-align: center;
+  }
+    header {
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+    .hero {
+    width: 80%;
+  }
   .two-col {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -305,11 +335,6 @@ h2 {
 
   .feature-cards {
     grid-template-columns: 1fr;
-  }
-
-  header .container {
-    flex-direction: column;
-    align-items: flex-start
   }
 
   header nav ul {
@@ -322,6 +347,19 @@ h2 {
 }
 
 @media (width <= 300px) {
+    h2 {
+    text-align: center;
+  }
+  header {
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    width: 80%;
+  }
   .feature-cards {
     grid-template-columns: 1fr;
   }
@@ -338,3 +376,4 @@ h2 {
     align-items: center;
   }
 }
+
