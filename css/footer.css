@@ -34,17 +34,17 @@ footer ul li a:hover {
   min-height: 150px;
 }
 
-#socials {
+.socials {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-#socials img {
+.socials img {
   width: 30px;
 }
 
-#socials img:hover {
+.socials img:hover {
   transform: scale(1.2);
   fill: white;
   transition: transform 0.2s ease-out;

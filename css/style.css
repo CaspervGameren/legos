@@ -129,39 +129,15 @@ header {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  /* background-image: url(../images/banner.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center; */
   height:60vh;
 }
 
 header > div {
   width: 80%;
-}
-
-/* ------------------------------------- */
-/* Section */
-/* ------------------------------------- */
-
-section > div {
-  margin: 0 auto;
-}
-
-
-
-
-.button {
-  border: none;
-  background-color: #0099FF;
-  color: white;
-  padding: 15px 45px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #007ACC;
 }
 
 h1 {
@@ -170,22 +146,10 @@ h1 {
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
-  /* color: white; */
-}
-
-.hero p {
-  color: #666;
-  line-height: 1.6
-}
-
-.hero-media img {
-  width: 80%;
-  height: auto;
-  border-radius: 6px;
 }
 
 /* ------------------------------------- */
-/* Main */
+/* Section */
 /* ------------------------------------- */
 
 section {
@@ -195,15 +159,20 @@ section {
   padding: 50px 0;
 }
 
-section .container {
-  max-width: 60%;
+section > div {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .section-title {
+  border-radius: 5px;
+  background: white;
   text-align: center;
-  font-size: 2.1rem;
-  margin-bottom: 28px;
-  font-weight: 800
+  margin: 0 0 28px 0;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .two-col {
