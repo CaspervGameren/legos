@@ -127,18 +127,22 @@ nav li a:hover:after {
 header {
   display: flex;
   flex-flow: column;
-  left: 100px;
-  top: 100px;
+
   position: relative;
-  /* background-image: url(../images/banner.svg);
+  background-image: url(../images/hero-image.png);
   background-repeat: no-repeat;
-  background-size:contain;
-  background-position: center; */
+  background-size:cover;
+  background-position: center;
   height:100dvh;
 }
 
 .hero {
+  position: relative;
+  background: white;
+  border-radius: 5px;
   width: 30%;
+  left: 50px;
+  top: 100px;
 }
 
 h1 {
