@@ -4,6 +4,7 @@
 :root {
   --box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
   --box-shadow-inverted: 0px -6px 16px rgba(0, 0, 0, 0.05);
+  --default-padding: 8px 20px;
 }
 
 * {
@@ -123,75 +124,33 @@ nav li a:hover:after {
 /* Header */
 /* ------------------------------------- */
 
-.container {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-header .container {
+header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px
-}
-
-.button {
-  border: none;
-  background-color: #0099FF;
-  color: white;
-  padding: 15px 45px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #007ACC;
-}
-
-.logo img {
-  height: 40px;
-  display: block
+  flex-flow: column;
+  left: 100px;
+  top: 100px;
+  position: relative;
+  /* background-image: url(../images/banner.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center; */
+  height:100dvh;
 }
 
 .hero {
-  padding: 56px 0
+  width: 30%;
 }
 
-.hero .container {
-  display: flex;
-  flex-direction: row;
-  gap: 36px;
-}
-
-.hero h1 {
+h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 48px;
   letter-spacing: 6px;
   margin-bottom: 12px;
-  /* color: white; */
-}
-
-.hero p {
-  color: #666;
-  line-height: 1.6
-}
-
-.hero-media img {
-  width: 80%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: var(--box-shadow);
 }
 
 /* ------------------------------------- */
-/* Main */
+/* Section */
 /* ------------------------------------- */
 
 section {
@@ -201,16 +160,26 @@ section {
   padding: 50px 0;
 }
 
-section .container {
-  max-width: 60%;
+section > div {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .section-title {
+  border-radius: 5px;
+  background: white;
   text-align: center;
-  font-size: 2.1rem;
-  margin-bottom: 28px;
-  font-weight: 800
+  width: 80%;
+  align-self: center;
 }
+
+h2 {
+  font-size: 2rem;
+}
+
+/* ------------------------------------- */
+/* Section */
+/* ------------------------------------- */
 
 .two-col {
   display: flex;
@@ -237,10 +206,6 @@ section .container {
   width: 300px;
 }
 
-#innovation {
-  text-align: justify;
-}
-
 .image-innovatie {
   display: flex;
   flex-direction: column-reverse;
@@ -262,7 +227,6 @@ section .container {
   background: #ffffff;
   padding: 20px;
   border-radius: 6px;
-  box-shadow:var(--box-shadow);
 }
 
 .feature-cards {
@@ -310,11 +274,18 @@ section .container {
 /* ------------------------------------- */
 
 @media (600px <= width <= 900px) {
-
-  .hero .container {
-    grid-template-columns: 1fr;
+  h2 {
+    text-align: center;
   }
-
+    header {
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    width: 80%;
+  }
   .two-col {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -332,11 +303,6 @@ section .container {
     grid-template-columns: 1fr
   }
 
-  header .container {
-    flex-direction: column;
-    align-items: flex-start
-  }
-
   header nav ul {
     flex-wrap: wrap
   }
@@ -348,19 +314,18 @@ section .container {
 }
 
 @media (300px <= width <= 600px) {
-
-  .container {
-    max-width: none;
+    h2 {
+    text-align: center;
   }
-
-  section .container {
-    max-width: none;
+    header {
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
   }
-
-  .hero .container {
-    grid-template-columns: 1fr;
+    .hero {
+    width: 80%;
   }
-
   .two-col {
     grid-template-columns: 1fr;
     flex-direction: column;
@@ -370,11 +335,6 @@ section .container {
 
   .feature-cards {
     grid-template-columns: 1fr;
-  }
-
-  header .container {
-    flex-direction: column;
-    align-items: flex-start
   }
 
   header nav ul {
@@ -384,32 +344,25 @@ section .container {
   .col-card {
     min-width: 80%;
   }
-
-  #goal .card,
-  #innovation .card,
-  #product .card {
-    min-width: 90%;
-  }
-
-  .image-innovatie {
-    display: flex;
-    align-items: center;
-  }
 }
 
 @media (width <= 300px) {
-
-  .container {
-    max-width: none;
+    h2 {
+    text-align: center;
+  }
+  header {
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
   }
 
-  .hero .container {
-      grid-template-columns: 1fr;
-    }
-
+  .hero {
+    width: 80%;
+  }
   .feature-cards {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+  }
 
   .two-col {
     grid-template-columns: 1fr;
@@ -423,3 +376,4 @@ section .container {
     align-items: center;
   }
 }
+
